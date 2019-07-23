@@ -11,13 +11,12 @@ app.get('/', (req, res) => res.send('Grid Eye IOT'));
 
 io.on('connect', () => {
   console.log('Grid eye iot connected');
-  setInterval(() => {
-    io.emit('from_grid_eye', {
-      time: Date.now(),
-      count: getRandomInt(10),
-      id: getRandomInt(4)
-    });
-  }, 2000);
+  /* setInterval(() => {
+    io.emit('from_grid_eye', { time: 1563880469897, count: 9, id: 3 });
+  }, 2000);*/
+  io.emit('from_grid_eye', { time: 1563880469891, count: 4, id: 1 });
+  io.emit('from_grid_eye', { time: 1563880469892, count: 2, id: 2 });
+  io.emit('from_grid_eye', { time: 1563880469893, count: 6, id: 3 });
 });
 
 io.on('disconnect', () => console.log('Grid eye iot disconnected'));
