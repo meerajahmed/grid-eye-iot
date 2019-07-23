@@ -1,0 +1,26 @@
+{
+  "name": "grid-eye-iot",
+  "version": "1.0.0",
+  "description": "Grid Eye IOT",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meerajahmed/grid-eye-iot.git"
+  },
+  "keywords": [
+    "Grid Eye",
+    "IOT"
+  ],
+  "author": "Meeraj Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meerajahmed/grid-eye-iot/issues"
+  },
+  "homepage": "https://github.com/meerajahmed/grid-eye-iot#readme",
+  "dependencies": {
+    "socket.io-client": "^2.2.0"
+  }
+}
