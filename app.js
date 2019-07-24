@@ -3,7 +3,7 @@ const socketio = require('socket.io-client');
 
 const app = express();
 const port = process.env.PORT || 3001; // port set by heroku
-const io = socketio('http://localhost:3000');
+const io = socketio('https://cosmos-grid-eye.herokuapp.com');
 
 getRandomInt = (max) =>  Math.floor(Math.random() * Math.floor(max));
 
